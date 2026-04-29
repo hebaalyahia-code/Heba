@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Personal Portfolio Website">
+    <title>هبة سيجنتشر | Heba Signature</title>
+    
+    <!-- ملف التنسيق -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🧭 Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <!-- الشعار (Logo) كصورة -->
+            <a href="#" class="logo-container">
+                <img src="https://placehold.co/150x50/a29f81/4f1e27?text=LOGO" alt="Website Logo" class="logo-img">
+            </a>
+            
+            <!-- قائمة التنقل -->
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <!-- زر تبديل اللغة -->
+                <a href="index.html" class="lang-switch">العربية</a>
+            </nav>
+
+            <!-- زر التواصل في الهيدر -->
+            <a href="#contact" class="btn btn-outline">Start Project</a>
+        </div>
+    </header>
+
+    <!-- 🔝 الصفحة الرئيسية (Hero Section) -->
+    <section id="hero" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h2 class="subtitle">Welcome, I am</h2>
+                <h1 class="title">Heba Signature</h1>
+                <p class="description">
+                    A Web Designer and Developer turning ideas into modern luxury digital experiences. I care about fine details and eye-pleasing aesthetics.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👤 قسم "من أنا" (About Me) -->
+    <section id="about" class="about section bg-alternate">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Passion for Design & Creativity</h3>
+                    <p>
+                        I am a professional in my field with a style that combines Minimalism and Luxury. I believe good design is not just what it looks like, but how it works.
+                    </p>
+                    <p>
+                        I have extensive experience building integrated solutions that serve client needs and elevate their brands to new heights. Every project to me is a piece of art.
+                    </p>
+                    <ul class="skills-list">
+                        <li>UI/UX Design</li>
+                        <li>Modern Web Development</li>
+                        <li>Branding</li>
+                        <li>Digital Marketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💼 قسم الحلول / الباقات (Services / Pricing) -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solutions & Packages</h2>
+                <div class="divider"></div>
+                <p>Choose the package that suits your project needs for the best start.</p>
+            </div>
+            
+            <div class="cards-grid">
+                <!-- كرت باقة 1 -->
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <div class="price">Starts from <span>$500</span></div>
+                    </div>
+                    <p class="card-desc">Perfect for startups needing an elegant and simple digital presence.</p>
+                    <ul class="features">
+                        <li>Landing Page Design</li>
+                        <li>Mobile Responsive</li>
+                        <li>Basic SEO Optimization</li>
+                        <li>1 Month Tech Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Order Now</a>
+                </div>
+
+                <!-- كرت باقة 2 -->
+                <div class="card pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <div class="price">Starts from <span>$1200</span></div>
+                    </div>
+                    <p class="card-desc">The ideal solution for growing businesses looking for excellence.</p>
+                    <ul class="features">
+                        <li>Multi-page Website</li>
+                        <li>Fully Custom Design</li>
+                        <li>Content Management Panel</li>
+                        <li>Analytics Integration</li>
+                        <li>3 Months Tech Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Order Now</a>
+                </div>
+
+                <!-- كرت باقة 3 -->
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h3>Advanced</h3>
+                        <div class="price">Custom</div>
+                    </div>
+                    <p class="card-desc">For large scale projects requiring complex functional solutions.</p>
+                    <ul class="features">
+                        <li>Custom Web Solutions</li>
+                        <li>Full E-commerce Build</li>
+                        <li>Advanced Security</li>
+                        <li>Private Cloud Hosting</li>
+                        <li>Continuous Development</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🧠 قسم المشاريع (Portfolio / Projects) -->
+    <section id="portfolio" class="portfolio section bg-alternate">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Work</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- مشروع 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Web Application</h3>
+                                <p>Modern UI design and development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Educational Platform</h3>
+                                <p>Seamless user experience for students</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Brand Identity</h3>
+                                <p>Logo and printables for real estate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1481481600673-c6c8c935f0a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Fashion Website</h3>
+                                <p>Luxury and minimal storefront</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🤝 قسم الشركاء (Partners Logos - Animation) -->
+    <section class="partners section">
+        <div class="container">
+            <div class="section-header center">
+                <p>Our Partners</p>
+            </div>
+            
+            <div class="partners-slider">
+                <div class="partners-track">
+                    <!-- الشعارات (مجموعة 1) -->
+                    <div class="partner-logo">Logo 1</div>
+                    <div class="partner-logo">Logo 2</div>
+                    <div class="partner-logo">Logo 3</div>
+                    <div class="partner-logo">Logo 4</div>
+                    <div class="partner-logo">Logo 5</div>
+                    <div class="partner-logo">Logo 6</div>
+                    <div class="partner-logo">Logo 7</div>
+                    
+                    <!-- تكرار الشعارات للحركة المستمرة (Infinite Loop) -->
+                    <div class="partner-logo">Logo 1</div>
+                    <div class="partner-logo">Logo 2</div>
+                    <div class="partner-logo">Logo 3</div>
+                    <div class="partner-logo">Logo 4</div>
+                    <div class="partner-logo">Logo 5</div>
+                    <div class="partner-logo">Logo 6</div>
+                    <div class="partner-logo">Logo 7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 قسم التواصل (Contact) -->
+    <section id="contact" class="contact section bg-alternate">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Discuss Your Next Project</h2>
+                    <p>I am always available to discuss your ideas and turn them into reality. Feel free to contact me for any inquiries.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">✉</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@yourwebsite.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+966 50 000 0000</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Riyadh, Saudi Arabia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="example@domain.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="https://placehold.co/150x50/fdfbf7/4f1e27?text=LOGO" alt="Website Logo" class="logo-img">
+            </div>
+            <p>&copy; 2024 All Rights Reserved. Designed with love.</p>
+            <div class="social-links">
+                <a href="#">X</a>
+                <a href="#">In</a>
+                <a href="#">Be</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
