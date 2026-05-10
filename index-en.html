@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional Personal Portfolio Website">
-    <title>هبة سيجنتشر | Heba Signature</title>
+    <title>Heba Signature | هبة سيجنتشر</title>
     
+    <!-- خطوط جوجل (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- ملف التنسيق -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -24,14 +29,11 @@
                 <a href="#hero">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact Us</a>
                 <!-- زر تبديل اللغة -->
                 <a href="index.html" class="lang-switch">العربية</a>
             </nav>
 
-            <!-- زر التواصل في الهيدر -->
-            <a href="#contact" class="btn btn-outline">Start Project</a>
         </div>
     </header>
 
@@ -42,10 +44,10 @@
                 <h1 class="title">Heba Signature</h1>
                 <h2 class="subtitle">Presence, crafted to endure</h2>
                 <p class="description">
-                    A refined brand presence designed to captivate and remain etched in your audience’s memory.
+                    We build your brand through identity, content, and experience.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="https://www.behance.net/hebaalyahia" target="_blank" class="btn btn-primary">View Portfolio</a>
                     <a href="#contact" class="btn btn-secondary btn-contact">Contact Us</a>
                 </div>
             </div>
@@ -63,7 +65,7 @@
                 <div class="about-text">
                     <h3>Heba Signature</h3>
                     <p>
-                        Heba Signature is a creative house specialized in elevating brand presence for the real estate and financial sectors—both on the ground and beyond. Through integrated solutions spanning strategy development, content creation and management, visual identity, and experiential design, we craft cohesive brand expressions that reflect your essence and leave a memorable, lasting impact.
+                        Your strategic partner in elevating brand presence for the real estate, financial, and investment sectors through integrated solutions that include brand building and development, creative direction, strategic planning, content creation and management, and interactive experience design that reflects the brands vision and creates a lasting impact.
                     </p>
                 </div>
             </div>
@@ -74,125 +76,45 @@
     <section id="services" class="services section">
         <div class="container">
             <div class="section-header">
-                <h2>Solutions & Packages</h2>
+                <h2>Services & Solutions</h2>
                 <div class="divider"></div>
-                <p>Choose the package that suits your project needs for the best start.</p>
             </div>
             
             <div class="cards-grid">
-                <!-- كرت باقة 1 -->
+                <!-- Solution 1 -->
                 <div class="card pricing-card">
-                    <div class="card-header">
-                        <h3>Basic</h3>
-                        <div class="price">Starts from <span>$500</span></div>
+                    <div class="service-icon">
+                        <img src="line.svg" alt="Service Line">
                     </div>
-                    <p class="card-desc">Perfect for startups needing an elegant and simple digital presence.</p>
-                    <ul class="features">
-                        <li>Landing Page Design</li>
-                        <li>Mobile Responsive</li>
-                        <li>Basic SEO Optimization</li>
-                        <li>1 Month Tech Support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline btn-full">Order Now</a>
+                    <div class="card-header">
+                        <h3><strong>(Brand building and development)</strong></h3>
+                    </div>
+                    <p class="card-desc">including the development of the visual and expressive system and shaping creative directions.</p>
+                    <a href="#contact" class="btn btn-outline btn-full">Order Service</a>
                 </div>
 
-                <!-- كرت باقة 2 -->
+                <!-- Solution 2 -->
                 <div class="card pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="card-header">
-                        <h3>Professional</h3>
-                        <div class="price">Starts from <span>$1200</span></div>
+                    <div class="service-icon">
+                        <img src="line.svg" alt="Service Line">
                     </div>
-                    <p class="card-desc">The ideal solution for growing businesses looking for excellence.</p>
-                    <ul class="features">
-                        <li>Multi-page Website</li>
-                        <li>Fully Custom Design</li>
-                        <li>Content Management Panel</li>
-                        <li>Analytics Integration</li>
-                        <li>3 Months Tech Support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary btn-full">Order Now</a>
+                    <div class="card-header">
+                        <h3><strong>(Content creation & management)</strong></h3>
+                    </div>
+                    <p class="card-desc">and strategic development, across various digital and print touchpoints.</p>
+                    <a href="#contact" class="btn btn-primary btn-full">Order Service</a>
                 </div>
 
-                <!-- كرت باقة 3 -->
+                <!-- Solution 3 -->
                 <div class="card pricing-card">
+                    <div class="service-icon">
+                        <img src="line.svg" alt="Service Line">
+                    </div>
                     <div class="card-header">
-                        <h3>Advanced</h3>
-                        <div class="price">Custom</div>
+                        <h3><strong>(Designing interactive & creative experiences)</strong></h3>
                     </div>
-                    <p class="card-desc">For large scale projects requiring complex functional solutions.</p>
-                    <ul class="features">
-                        <li>Custom Web Solutions</li>
-                        <li>Full E-commerce Build</li>
-                        <li>Advanced Security</li>
-                        <li>Private Cloud Hosting</li>
-                        <li>Continuous Development</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline btn-full btn-contact">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 🧠 قسم المشاريع (Portfolio / Projects) -->
-    <section id="portfolio" class="portfolio section bg-alternate">
-        <div class="container">
-            <div class="section-header">
-                <h2>Latest Work</h2>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="portfolio-grid">
-                <!-- مشروع 1 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1">
-                        <div class="portfolio-overlay">
-                            <div class="overlay-content">
-                                <h3>Web Application</h3>
-                                <p>Modern UI design and development</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 2 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 2">
-                        <div class="portfolio-overlay">
-                            <div class="overlay-content">
-                                <h3>Educational Platform</h3>
-                                <p>Seamless user experience for students</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 3 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 3">
-                        <div class="portfolio-overlay">
-                            <div class="overlay-content">
-                                <h3>Brand Identity</h3>
-                                <p>Logo and printables for real estate</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 4 -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1481481600673-c6c8c935f0a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 4">
-                        <div class="portfolio-overlay">
-                            <div class="overlay-content">
-                                <h3>Fashion Website</h3>
-                                <p>Luxury and minimal storefront</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="card-desc">of brands, including project launch and presentation experiences that strengthen brand presence.</p>
+                    <a href="#contact" class="btn btn-outline btn-full">Order Service</a>
                 </div>
             </div>
         </div>
@@ -208,62 +130,113 @@
             <div class="partners-slider">
                 <div class="partners-track">
                     <!-- الشعارات (مجموعة 1) -->
-                    <div class="partner-logo">Logo 1</div>
-                    <div class="partner-logo">Logo 2</div>
-                    <div class="partner-logo">Logo 3</div>
-                    <div class="partner-logo">Logo 4</div>
-                    <div class="partner-logo">Logo 5</div>
-                    <div class="partner-logo">Logo 6</div>
-                    <div class="partner-logo">Logo 7</div>
-                    
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-13.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-14.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-15.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-16.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-17.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-18.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-19.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-20.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-21.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-22.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-23.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-24.svg" alt="Partner Logo"></div>
+
                     <!-- تكرار الشعارات للحركة المستمرة (Infinite Loop) -->
-                    <div class="partner-logo">Logo 1</div>
-                    <div class="partner-logo">Logo 2</div>
-                    <div class="partner-logo">Logo 3</div>
-                    <div class="partner-logo">Logo 4</div>
-                    <div class="partner-logo">Logo 5</div>
-                    <div class="partner-logo">Logo 6</div>
-                    <div class="partner-logo">Logo 7</div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-13.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-14.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-15.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-16.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-17.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-18.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-19.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-20.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-21.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-22.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-23.svg" alt="Partner Logo"></div>
+                    <div class="partner-logo"><img src="شعارات/Untitled-1-24.svg" alt="Partner Logo"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 📞 قسم التواصل (Contact) -->
+    <!-- 🏆 Achievements Section -->
+    <section class="achievements section">
+        <div class="achievements-bg">
+            <div class="achievements-animated-bg"></div>
+        </div>
+        <div class="container achievements-content">
+            <h2 class="title">Our Achievements in Numbers</h2>
+            <div class="stats-grid">
+                <!-- Stat 1 -->
+                <div class="stat-item">
+                    <span class="stat-number" data-target="650">0</span>
+                    <p class="stat-label">Projects</p>
+                </div>
+                <!-- Stat 2 -->
+                <div class="stat-item">
+                    <span class="stat-number" data-target="60">0</span>
+                    <p class="stat-label">Partners</p>
+                </div>
+                <!-- Stat 3 -->
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6">0</span>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 Contact Section -->
     <section id="contact" class="contact section bg-alternate">
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>Let's Discuss Your Next Project</h2>
-                    <p>We are always available to discuss your ideas and turn them into reality. Feel free to contact us for any inquiries.</p>
+                    <h2>Contact Us</h2>
                     
                     <div class="info-items">
                         <div class="info-item">
-                            <div class="info-icon">✉</div>
+                            <div class="info-icon">
+                                <img src="info/Untitled-1-35.svg" alt="Email">
+                            </div>
                             <div>
                                 <h4>Email</h4>
-                                <p>hello@yourwebsite.com</p>
+                                <p>heba.signature@gmail.com</p>
                             </div>
                         </div>
                         <div class="info-item">
-                            <div class="info-icon">📞</div>
+                            <div class="info-icon">
+                                <img src="info/Untitled-1-36.svg" alt="Phone">
+                            </div>
                             <div>
                                 <h4>Phone</h4>
-                                <p>+966 50 000 0000</p>
+                                <p dir="ltr"><a href="https://wa.me/966548651125" target="_blank">+966 54 865 1125</a></p>
                             </div>
                         </div>
                         <div class="info-item">
-                            <div class="info-icon">📍</div>
+                            <div class="info-icon">
+                                <img src="info/Untitled-1-34.svg" alt="Location">
+                            </div>
                             <div>
                                 <h4>Location</h4>
                                 <p>Riyadh, Saudi Arabia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <img src="info/Untitled-1-37.svg" alt="Working Hours">
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Sun - Thu: 9 AM - 5 PM</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-container">
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/f/heba.signature@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" placeholder="Enter your name" required>
@@ -289,14 +262,54 @@
             <div class="footer-logo">
                 <img src="logo.svg" alt="Website Logo" class="logo-img">
             </div>
-            <p>&copy; 2024 All Rights Reserved. Designed with love.</p>
+            <p>&copy; 2024 All Rights Reserved.</p>
             <div class="social-links">
-                <a href="#">X</a>
-                <a href="#">In</a>
-                <a href="#">Be</a>
+                <a href="https://www.instagram.com/heba_signature" target="_blank" aria-label="Instagram">
+                    <img src="social-39.svg" alt="Instagram">
+                </a>
+                <a href="https://www.snapchat.com/add/heba_signature" target="_blank" aria-label="Snapchat">
+                    <img src="social-40.svg" alt="Snapchat">
+                </a>
+                <a href="https://x.com/heba_signature" target="_blank" aria-label="X (Twitter)">
+                    <img src="social-38.svg" alt="X">
+                </a>
             </div>
         </div>
     </footer>
+
+    <!-- Counter Animation Script -->
+    <script>
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        const startCounters = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText.replace('+', '');
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = '+' + Math.ceil(count + inc);
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = '+' + target;
+                        }
+                    };
+                    updateCount();
+                    observer.unobserve(counter);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(startCounters, {
+            threshold: 0.5
+        });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
 
 </body>
 </html>

@@ -52,15 +52,28 @@ html[lang="en"] body {
 
 body {
     background-color: var(--bg-main);
-    /* إضافة إضاءة وظل بشكل قطري (من الأعلى يمين للأسفل يسار) مع خامة الورق المائي */
     background-image: 
-        url("https://www.transparenttextures.com/patterns/watercolor.png"),
-        linear-gradient(to bottom left, rgba(255, 255, 255, 0.6) 0%, transparent 40%, transparent 60%, rgba(64, 63, 63, 0.6) 100%);
-    background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed;
+        url("info/Untitled-1-30.svg"),
+        url("https://www.transparenttextures.com/patterns/watercolor.png");
+    background-size: 400px, auto;
+    background-repeat: repeat, repeat;
+    background-attachment: fixed, scroll;
     color: var(--text-secondary);
     line-height: 1.7;
     overflow-x: hidden;
+}
+
+/* Make the pattern very light */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(162, 159, 129, 0.92); /* Match ivory with transparency to fade pattern */
+    z-index: -1;
+    pointer-events: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -210,7 +223,7 @@ img {
 }
 
 .logo-img {
-    height: 40px; 
+    height: 60px; 
     object-fit: contain;
 }
 
@@ -383,26 +396,38 @@ html[lang="en"] .skills-list li::before {
 
 .pricing-card {
     background-color: transparent;
+    backdrop-filter: blur(5px);
     border-radius: var(--radius-md);
     padding: 40px 30px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border: 1px solid var(--color-gold-light); 
+    border: 1px solid rgba(79, 30, 39, 0.1); 
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .pricing-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--color-accent);
+    border-color: #4f1e27;
 }
 
-.pricing-card.featured {
-    background-color: transparent;
-    border-color: var(--text-main);
+.service-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.service-icon img {
+    width: 100%;
+    height: auto;
+    max-height: 20px;
+    object-fit: contain;
+}
+
 .pricing-card.featured .features li::before {
     color: var(--color-accent);
 }
@@ -442,8 +467,11 @@ html[lang="en"] .skills-list li::before {
 }
 
 .card-desc {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 0.95rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .features {
@@ -588,25 +616,29 @@ html[lang="en"] .partners-track {
 }
 
 .partner-logo {
-    min-width: 150px;
-    height: 80px;
+    min-width: 280px;
+    height: 180px;
     background-color: transparent;
-    border-radius: var(--radius-sm);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
-    color: var(--text-main);
-    box-shadow: var(--shadow-sm);
-    font-size: 1.2rem;
     transition: var(--transition);
-    border: 1px solid var(--color-gold-light);
+}
+
+.partner-logo img {
+    width: 240px;
+    height: 160px;
+    object-fit: contain;
+    filter: grayscale(1) opacity(0.85);
+    transition: var(--transition);
 }
 
 .partner-logo:hover {
-    box-shadow: var(--shadow-md);
-    transform: scale(1.05);
-    border-color: var(--color-accent);
+    transform: scale(1.08);
+}
+
+.partner-logo:hover img {
+    filter: grayscale(0) opacity(1);
 }
 
 @keyframes scrollLogos {
@@ -650,16 +682,19 @@ html[lang="en"] .partners-track {
 }
 
 .info-icon {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     background-color: transparent;
-    color: var(--text-main);
-    border-radius: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    border: 1px solid var(--color-accent);
+    flex-shrink: 0;
+}
+
+.info-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .info-item h4 {
@@ -705,6 +740,116 @@ html[lang="en"] .partners-track {
 }
 
 /* =========================================
+   Achievements Section (Stats)
+========================================= */
+.achievements {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.achievements-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4f1e27;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.achievements-animated-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        #4f1e27 0%,
+        #35131a 40%,
+        #652632 60%,
+        #4f1e27 100%
+    );
+    background-size: 300% 300%;
+    animation: smoothWave 12s ease-in-out infinite;
+}
+
+.achievements-animated-bg::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(ellipse at 30% 40%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 60%, rgba(0, 0, 0, 0.4) 0%, transparent 50%);
+    animation: gentleRotate 20s ease-in-out infinite alternate;
+}
+
+@keyframes smoothWave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gentleRotate {
+    0% { transform: rotate(-5deg) scale(1); }
+    100% { transform: rotate(5deg) scale(1.1); }
+}
+
+.achievements-content {
+    position: relative;
+    z-index: 2;
+}
+
+.achievements h2 {
+    color: var(--color-white);
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.stat-item {
+    padding: 40px 20px;
+    transition: var(--transition);
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--color-gold-light);
+    margin-bottom: 15px;
+    line-height: 1;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@keyframes kenBurns {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.1) translate(-2%, -2%); }
+}
+
+/* =========================================
    Footer
 ========================================= */
 .footer {
@@ -732,22 +877,27 @@ html[lang="en"] .partners-track {
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
-    background-color: var(--bg-secondary);
-    color: var(--text-main);
+    width: 55px;
+    height: 55px;
+    background-color: #4f1e27;
+    color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* شكل دائري */
+    border-radius: 50%;
     transition: var(--transition);
-    border: 1px solid var(--color-accent);
+}
+
+.social-links a img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 .social-links a:hover {
-    background-color: var(--text-main);
-    color: var(--color-white);
-    border-color: var(--text-main);
+    background-color: var(--color-dark-gray);
+    transform: translateY(-3px);
 }
 
 /* =========================================
